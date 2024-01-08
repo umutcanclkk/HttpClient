@@ -1,4 +1,5 @@
 ﻿using Core.DTOs;
+using Core.Models;
 
 namespace Core.Response
 {
@@ -7,5 +8,7 @@ namespace Core.Response
         public CategoryDtos data { get; set; }
         public object Errors { get; set; }
         public CategoryUpdateDtos updateDtosdata { get; set; }
+        
+
     }
 }

@@ -16,6 +16,8 @@ public class CategoryController : ControllerBase
         _httpClient = new HttpClient();
     }
 
+
+
     [HttpGet]
     public async Task<IActionResult> Category()
     {
@@ -60,7 +62,7 @@ public class CategoryController : ControllerBase
             if (response.IsSuccessStatusCode)
             {
                 string responseData = await response.Content.ReadAsStringAsync();
-             //var apiResponse = JsonConvert.DeserializeObject<ProductWithCategoryDtosApiResponse>(responseData);
+             //var apiResponse = JsonConvert.DeserializeObject<CategoryDtos>(responseData);
                 return Ok(responseData);
             }
             else

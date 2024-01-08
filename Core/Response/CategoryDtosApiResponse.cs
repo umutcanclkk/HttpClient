@@ -4,6 +4,7 @@ namespace Core.Response
 {
     public class CategoryDtosApiResponse
     {
-        public List<CategoryDtos> data {  get; set; }
+        public List<CategoryDtos> data { get; set; }
+
     }
 }
